@@ -30,7 +30,7 @@ class WenshuSpider(Spider):
       meta = None
       try:
         res = requests.get(
-          'http://api.ip.data5u.com/dynamic/get.html?order=de15a979c3c4c0ab0de6e89f6a37924d&random=1&json=1')
+          '代理地址')
         if res.ok:
           meta = {"proxy": "http://{}:{}".format(res.json()['data'][0]['ip'], res.json()['data'][0]['port'])}
           print(meta)
@@ -100,7 +100,7 @@ class WenshuSpider(Spider):
 #       meta = None
 #       try:
 #         res = requests.get(
-#           'http://api.ip.data5u.com/dynamic/get.html?order=de15a979c3c4c0ab0de6e89f6a37924d&random=1&json=1')
+#           '代理地址')
 #         if res.ok:
 #           meta = {"proxy": "http://{}:{}".format(res.json()['data'][0]['ip'], res.json()['data'][0]['port'])}
 #           print(meta)
