@@ -12,9 +12,9 @@ BASE_URL = 'http://wenshuapp.court.gov.cn/appinterface/rest.q4w'
 # get proxies
 def query_proxies():
   proxies = None
-  url = 'http://api.ip.data5u.com/dynamic/get.html'
+  url = '代理地址'
   params = {
-    'order': 'de15a979c3c4c0ab0de6e89f6a37924d',
+    'order': 'xx',
     'random': 1,
     'json': 1
   }
